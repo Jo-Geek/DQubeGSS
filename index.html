@@ -8,6 +8,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/bootstrap.overrides.css" />
   <link rel="stylesheet" href="assets/css/dqgss.css" />
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -17,22 +18,43 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
 
+  <script src="assets/js/dqgss.js"></script>
 
 </head>
 
-<body>
+<body class="loading">
+  <div class="loader">
+    <div class="spinner">
+      <svg>
+        <g transform="translate(-2.7356568,-1.5087616)" id="layer1">
+          <path id="rect826" d="M 22.684501,1.6337611 103.48343,73.813242 92.16214,84.882482 9.8889716,2.9366981 Z"
+            style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke" />
+          <path style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+            d="M 29.700326,145.99273 103.48343,73.813242 93.21124,64.654762 11.358954,146.02614 Z" id="path829" />
+          <path id="path831" d="m 69.680932,43.738718 c 0,0 3.709348,3.292233 3.709348,3.292233 0,0 -38.739735,38.637131 -38.739735,38.637131 0,0 37.537525,37.520328 37.537525,37.520328 0,0 -9.630789,-0.0405 -9.630789,-0.0405 0,0 -39.08481,-38.178998 -39.08481,-38.178998 0,0 46.208461,-41.230194 46.208461,-41.230194 z"
+            style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+          <path id="path837" d="m 2.9065566,129.25496 c 0,0 4.142677,-4.67722 4.142677,-4.67722 0,0 5.6794774,-97.419739 5.6794774,-97.419739 0,0 -9.8221544,102.096959 -9.8221544,102.096959 z"
+            style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </svg>
+    </div>
+  </div>
   <div class="banner">
     <video autoplay muted loop id="banner_video">
       <source src="assets/video/bannerbg.mp4" type="video/mp4">
+      <!-- <source src="assets/video/bannerbg_tech.webm" type="video/webm"> -->
     </video>
     <div class="banner-content">
-
-      <div class="container">
+      <!-- <video class="d-none" autoplay muted loop id="banner_video_blur">
+        <source src="assets/video/bannerbg.mp4" type="video/mp4">
+        <source src="assets/video/bannerbg_tech.webm" type="video/webm">
+      </video> -->
+      <div class="container-fluid">
         <div class="row banner-row">
-          <div class="col-6 text-center">
+          <div class="col-5 col-xxl-6 p-0 text-center">
             <div class='banner-left p-4'>
               <div class="banner-logo">
-                <img src="assets/image/logo.png" />
+                <img src="assets/image/logo.jpg" />
               </div>
 
               <div class="my-3">
@@ -40,13 +62,13 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-7 col-xxl-6">
             <div class="banner-slider text-white">
 
 
               <div id="bannderSlider" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div class="carousel-item active" data-interval="8000">
                     <div class="banner-slider-slide">
                       <h3>In <span>Dqube</span>, we turn your imagination into Trendy designs.</h3>
                       <p>In this internet world, you have only a moment to create an impact on your visiting audience,
@@ -54,40 +76,113 @@
                         make
                         a
                         good impression by cool and user – friendly website</p>
+
+                      <button class="banner-button">Learn More</button>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" data-interval="5000">
                     <div class="banner-slider-slide">
                       <h3>Determined</h3>
                       <p>For excellence since our inception, we at Dqube trust in “INNOVATION” at every step.</p>
+                      <button class="banner-button">Learn More</button>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" data-interval="8000">
                     <div class="banner-slider-slide">
-
+                      <h3>We Create</h3>
                       <p>We at Dqube, create your own website, not just a website but a user-friendly, responsive
                         website. Our focus is to create and maintain great looking websites which drive great profit
                         for your business</p>
+                      <button class="banner-button">Learn More</button>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" data-interval="5000">
                     <div class="banner-slider-slide">
                       <h3>What We Do</h3>
                       <p>We build brands - educate, engage, and inspire customers through effective online services.</p>
+                      <button class="banner-button">Learn More</button>
                     </div>
                   </div>
                 </div>
               </div>
 
 
+              <div class="banner-services">
+                <a class="services-button">
+                  <img src="assets/image/website.gif" />
+                  <span class="text">Website</span>
+                </a>
+                <a class="services-button">
+                  <img src="assets/image/webapp.gif" />
+                  <span class="text">Web App</span>
+                </a>
+                <a class="services-button">
+                  <img src="assets/image/website.gif" />
+                  <span class="text">Mobile App</span>
+                </a>
+                <a class="services-button">
+                  <img src="assets/image/design.gif" />
+                  <span class="text">Design</span>
+                </a>
+                <a class="services-button d-none d-xxl-inline-block">
+                  <img src="assets/image/website.gif" />
+                  <span class="text">Web Services</span>
+                </a>
+              </div>
 
 
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</body>
 
-</html>
+    </div>
+
+    <a class="banner-footer-goto d-none"><i class="fas fa-chevron-down fa-2x"></i></a>
+  </div>
+
+  <main>
+    <div class="container">
+      Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something <br />Something
+      <br />
+    </div>
+  </main>
+
+
+  <div class="" </body> </html>

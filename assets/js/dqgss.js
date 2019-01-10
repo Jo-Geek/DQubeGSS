@@ -1,7 +1,13 @@
-function bannerSlider() {
-  var slides = $('.banner-slider-slide');
-  slides.hide();
-  slides.array.forEach(function (i) {
+$(document).ready(function () {
 
-  });
+  $('.spinner').addClass('activate');
+})
+
+window.onload = function () {
+
+  setTimeout(function () {
+
+    $('.loading').removeClass('loading');
+  },
+    5000)
 }
