@@ -173,6 +173,7 @@ a.banner-footer-goto:hover {
   clip-path: polygon(0% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0%);
   transition: all 0.3s ease;
   margin-bottom: .25rem;
+  background-color:white;
 }
 
 .services-button:hover img {
