@@ -31,27 +31,39 @@ body {
 .banner-footer {
   position: absolute;
   top: 400px;
-  height: calc(100vh - 500px);
+  height: calc(100vh - 400px);
   left: 0px;
   width: 100%;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  padding-top:20px;
+  /* padding-top:20px; */
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
 }
 
-.banner-footer .title{
-  /* -webkit-clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
-clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%); */
-font-weight:normal;
-border-top-left-radius:0px;
+.banner-footer .title {
+  -webkit-clip-path: polygon(0% 0, 100% 0, 90% 100%, 10% 100%);
+  clip-path: polygon(0% 0, 100% 0, 90% 100%, 10% 100%);
+  font-weight: normal;
+  /* border-top-left-radius:0px;
 border-top-right-radius:0px;
 border-bottom-left-radius:30px;
-border-bottom-right-radius:30px;
-background-color:#0F8B8D;
-padding:.5rem 1.5rem .6rem 1.5rem;
+border-bottom-right-radius:30px; */
+  background-color: rgba(0,0,0,0.5);
+  padding: .5rem 2.5rem .6rem 2.5rem;
+  position: absolute;
+  width: auto;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.customer-logo{
-  max-width:100px;
+.banner-footer .container .row {
+  transform: translateY(25px);
+}
+
+.customer-logo {
+  max-width: 100px;
 }
 
 #banner_video_blur {
@@ -312,7 +324,7 @@ nav.fixed-top {
 
 main {
   background: white;
-  box-shadow: 0 -0.25rem 2rem rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 -0.25rem 2rem rgba(0, 0, 0, 0.2); */
   padding: 5rem 0rem 2rem 0rem;
 }
 
@@ -477,13 +489,12 @@ path {
 }
 
 @media (min-width:1600px) {
-
-  .banner-left{
-    min-height:600px;
+  .banner-left {
+    min-height: 600px;
   }
-
   .banner-footer {
-    top:600px;
-    padding-top:100px;
+    top: 600px;
+    height: calc(100vh - 600px);
+    /* padding-top:100px; */
   }
 }
