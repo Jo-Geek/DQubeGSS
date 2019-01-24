@@ -429,7 +429,7 @@
 }
 
 @media (min-width: 1900px) {
-  .container-xxl {
+  .container.container-xxl {
     max-width: 1600px;
   }
 }

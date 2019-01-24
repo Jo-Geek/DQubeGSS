@@ -115,12 +115,9 @@ border-bottom-right-radius:30px; */
 }
 
 .banner-logo {
-  display: inline-block;
+  max-width:300px;
 }
 
-.banner-logo img {
-  width: 30vw;
-}
 
 .banner-slider {
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
@@ -511,6 +508,10 @@ path {
     top: 600px;
     height: calc(100vh - 600px);
     /* padding-top:100px; */
+  }
+
+  .banner-logo {
+    max-width:400px;
   }
 
 }
