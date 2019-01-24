@@ -1,4 +1,7 @@
 @media (min-width: 1500px) {
+  .container {
+    max-width: 1400px;
+  }
   .d-xxl-none {
     display: none !important;
   }
@@ -422,5 +425,11 @@
   }
   .ml-xxl-auto, .mx-xxl-auto {
     margin-left: auto !important;
+  }
+}
+
+@media (min-width: 1900px) {
+  .container-xxl {
+    max-width: 1600px;
   }
 }
