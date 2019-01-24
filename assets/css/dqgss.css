@@ -9,7 +9,6 @@ body {
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%) scaleX(-1);
-
   /* filter:blur(5px); */
   z-index: -1;
 }
@@ -27,6 +26,11 @@ body {
   background-color: rgba(0, 0, 0, .5);
   overflow: hidden;
   /* box-shadow:0 0.5rem 1rem rgba(0,0,0,0.3); */
+  height: 100%;
+  background: -moz-linear-gradient(left, rgba(38,71,90,1) 0%, rgba(38,71,90,1) 1%, rgba(38,71,90,1) 40%, rgba(38,71,90,0) 100%);
+  background: -webkit-linear-gradient(left, rgba(38,71,90,1) 0%,rgba(38,71,90,1) 1%,rgba(38,71,90,1) 40%,rgba(38,71,90,0) 100%);
+  background: linear-gradient(to right, rgba(38,71,90,1) 0%,rgba(38,71,90,1) 1%,rgba(38,71,90,1) 40%,rgba(38,71,90,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26475a', endColorstr='#0026475a',GradientType=1 );
 }
 
 .banner-footer {
@@ -50,7 +54,7 @@ body {
 border-top-right-radius:0px;
 border-bottom-left-radius:30px;
 border-bottom-right-radius:30px; */
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: .5rem 2.5rem .6rem 2.5rem;
   position: absolute;
   width: auto;
@@ -79,7 +83,7 @@ border-bottom-right-radius:30px; */
 }
 
 .banner-content:before {
-  content: '';
+  /* content: ''; */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -100,7 +104,7 @@ border-bottom-right-radius:30px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 .banner-logo {
@@ -354,7 +358,7 @@ body:not(.loading) .loader {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%) scale(.5);
   transform-origin: center center;
   width: 150px;
   height: 150px;
@@ -395,7 +399,7 @@ body:not(.loading) .loader {
   width: 103px;
   /* border-right: 1px solid #fff; */
   transform-origin: center center;
-  transform: rotate(0deg) scale(.8);
+  transform: rotate(0deg) ;
   transition: all 0.3s ease;
   animation: none;
   margin-left: 1rem;
@@ -456,7 +460,7 @@ path {
 }
 
 .loader .spinner.activate {
-  transform: rotate(360deg) translateX(-50%) translateY(-50%);
+  transform: rotate(360deg) translateX(-50%) translateY(-50%) scale(.75);
 }
 
 .loader .spinner.activate svg {
@@ -464,12 +468,12 @@ path {
 }
 
 @keyframes fade_scale {
-  from {
-    transform: scale(1.1);
+  0%,100% {
+    transform: scale(1);
     opacity: 1;
   }
-  to {
-    transform: scale(1);
+  50% {
+    transform: scale(1.1);
     opacity: 0;
   }
 }
@@ -501,4 +505,12 @@ path {
     height: calc(100vh - 600px);
     /* padding-top:100px; */
   }
+}
+
+.text-shadow{
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.subtitle{
+  font-size:1.2rem;
 }
