@@ -345,7 +345,8 @@ main {
 }
 
 body:not(.loading) .loader {
-  display: none;
+  left:100%;
+  width:0px;
 }
 
 .loader {
@@ -356,6 +357,8 @@ body:not(.loading) .loader {
   height: 100vh;
   z-index: 1024;
   background-color: #26475A;
+  transition:all .4s ease-out;
+  overflow:hidden;
 }
 
 .loader .spinner {
