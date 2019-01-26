@@ -27,10 +27,7 @@ body {
   overflow: hidden;
   /* box-shadow:0 0.5rem 1rem rgba(0,0,0,0.3); */
   height: 100%;
-  background: -moz-linear-gradient(left, rgba(38, 71, 90, 1) 0%, rgba(38, 71, 90, 1) 1%, rgba(38, 71, 90, 1) 40%, rgba(38, 71, 90, 0) 100%);
-  background: -webkit-linear-gradient(left, rgba(38, 71, 90, 1) 0%, rgba(38, 71, 90, 1) 1%, rgba(38, 71, 90, 1) 40%, rgba(38, 71, 90, 0) 100%);
-  background: linear-gradient(to right, rgba(38, 71, 90, 1) 0%, rgba(38, 71, 90, 1) 1%, rgba(38, 71, 90, 1) 40%, rgba(38, 71, 90, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26475a', endColorstr='#0026475a', GradientType=1);
+  background: rgba(38, 71, 90, 1);
 }
 
 .banner-content>.container {
@@ -115,9 +112,8 @@ border-bottom-right-radius:30px; */
 }
 
 .banner-logo {
-  max-width:300px;
+  max-width: 300px;
 }
-
 
 .banner-slider {
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
@@ -335,9 +331,17 @@ nav.fixed-top {
 }
 
 main {
-  background: white;
+  background: transparent;
   /* box-shadow: 0 -0.25rem 2rem rgba(0, 0, 0, 0.2); */
-  padding: 5rem 0rem 2rem 0rem;
+  /* padding: 5rem 0rem 2rem 0rem; */
+}
+
+section {
+  padding: 1rem 0;
+}
+
+section:first-of-type {
+  padding-top: 5rem;
 }
 
 .loading {
@@ -345,8 +349,7 @@ main {
 }
 
 body:not(.loading) .loader {
-  left:100%;
-  width:0px;
+  width: 0px;
 }
 
 .loader {
@@ -357,8 +360,8 @@ body:not(.loading) .loader {
   height: 100vh;
   z-index: 1024;
   background-color: #26475A;
-  transition:all .4s ease-out;
-  overflow:hidden;
+  transition: all .4s ease-out;
+  overflow: hidden;
 }
 
 .loader .spinner {
@@ -503,6 +506,70 @@ path {
   }
 }
 
+.text-shadow {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+}
+
+.bg-white-transparent {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.bg-dark-transparent {
+  background-color: rgba(38, 71, 90, 0.85);
+}
+
+.row-metric-circle .metric-circle {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(0, 212, 124, 0.5);
+  border-radius: 50%;
+  font-size: 4rem;
+  color: #f4f4f4;
+  position: relative;
+  text-align: center;
+  padding: 1.45rem 0;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+  margin-top: 5rem;
+}
+
+.row-metric-circle .metric-circle i {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #343a40;
+  padding: .5rem 0;
+  border-radius: 50%;
+  color: white
+}
+
+.row-metric-circle .metric-circle+label {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: white;
+}
+
+@media (min-width:768px) {
+  .banner-content {
+    background: -moz-linear-gradient(left, rgba(38, 71, 90, 1) 0%, rgba(38, 71, 90, 1) 1%, rgba(38, 71, 90, 1) 40%, rgba(38, 71, 90, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(38, 71, 90, 1) 0%, rgba(38, 71, 90, 1) 1%, rgba(38, 71, 90, 1) 40%, rgba(38, 71, 90, 0) 100%);
+    background: linear-gradient(to right, rgba(38, 71, 90, 1) 0%, rgba(38, 71, 90, 1) 1%, rgba(38, 71, 90, 1) 40%, rgba(38, 71, 90, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26475a', endColorstr='#0026475a', GradientType=1);
+  }
+  .row-metric-circle .metric-circle {
+    margin-top: 8rem;
+  }
+}
+
 @media (min-width:1600px) {
   .banner-left {
     min-height: 600px;
@@ -512,17 +579,7 @@ path {
     height: calc(100vh - 600px);
     /* padding-top:100px; */
   }
-
   .banner-logo {
-    max-width:400px;
+    max-width: 400px;
   }
-
-}
-
-.text-shadow {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-}
-
-.subtitle {
-  font-size: 1.2rem;
 }

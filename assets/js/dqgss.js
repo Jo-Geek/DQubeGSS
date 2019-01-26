@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('html').scrollTop(0);
-  $('.spinner').addClass('activate');
+  //$('.spinner').addClass('activate');
 })
 
 var lastScrollTop = 0;
