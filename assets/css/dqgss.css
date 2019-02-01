@@ -23,11 +23,14 @@ body {
   position: absolute;
   top: 0px;
   width: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  /* background-color: rgba(0, 0, 0, .5); */
   overflow: hidden;
+  background: url(../image/bg.jpg);
+  background-size: 100%;
+  background-position: center center;
   /* box-shadow:0 0.5rem 1rem rgba(0,0,0,0.3); */
   height: 100%;
-  background: rgba(38, 71, 90, 1);
+  /* background: rgba(38, 71, 90, 1); */
 }
 
 .banner-content>.container {
@@ -321,13 +324,60 @@ a.banner-footer-goto:hover {
   /* margin-left:.5rem; */
 }
 
-nav.fixed-top {
+nav#secondary_nav.fixed-top {
   top: -60px;
   transition: all 0.3s ease;
+  background: white;
+  background-size: auto 100%;
+  background-position: center center;
+  opacity: 0;
+  border-bottom: 3px solid #1EBEC1;
+  box-shadow: 0rem 0.1rem .75rem #1ebec16e;
+}
+
+.nav#primary_nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
 }
 
 .navbar-brand-text {
   vertical-align: middle;
+}
+
+nav#secondary_nav {
+  background: white !important;
+}
+
+#secondary_nav a.navbar-brand {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  background-color: #051930;
+  top: 21px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+  border: 3px solid #1EBEC1;
+  border-top-color: white;
+  border-right-color: white;
+  padding: 8px 4px 6px 8px;
+  border-radius: 10px;
+  margin: 0px;
+  text-align: center;
+  box-shadow: -.25rem .25rem .75rem #1ebec16e;
+}
+
+#secondary_nav a.nav-link:hover {
+  transition: background .3s ease;
+  background-color: #1ebec1;
+  color: white !important;
+  border-radius: 50px;
+}
+
+#secondary_nav .navbar-brand img {
+  width: 100%;
+  height: auto;
+  transform: rotate(45deg);
+  margin: auto;
 }
 
 main {
@@ -349,7 +399,7 @@ section:first-of-type {
 }
 
 body:not(.loading) .loader {
-  width: 0px;
+  height: 0px;
 }
 
 .loader {
@@ -359,8 +409,8 @@ body:not(.loading) .loader {
   width: 100vw;
   height: 100vh;
   z-index: 1024;
-  background-color: #26475A;
-  transition: all .4s ease-out;
+  background-color: #041930;
+  transition: all .3s ease-out;
   overflow: hidden;
 }
 
@@ -380,7 +430,7 @@ body:not(.loading) .loader {
   position: absolute;
   height: 200px;
   width: 200px;
-  border: 2px solid white;
+  border: 2px solid #1EBEC1;
   top: -25px;
   left: -25px;
   border-radius: 50%;
@@ -519,21 +569,21 @@ path {
 }
 
 .bg-dark-transparent {
-  background-color: rgba(38, 71, 90, 0.85);
+  background-color: rgba(38, 71, 90, 0.8);
 }
 
 .row-metric-circle .metric-circle {
   margin: auto;
   width: 150px;
   height: 150px;
-  background-color: rgba(0, 212, 124, 0.5);
+  background-color: rgb(30, 190, 193);
   border-radius: 50%;
   font-size: 4rem;
   color: #f4f4f4;
   position: relative;
   text-align: center;
   padding: 1.45rem 0;
-  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.1rem 1rem rgba(30, 190, 193, 0.5);
   margin-top: 5rem;
 }
 
@@ -558,12 +608,20 @@ path {
   color: white;
 }
 
+section#secCustomer {
+  background-image: url('../image/world.png');
+  background-size: 90% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #fff !important;
+}
+
 @media (min-width:768px) {
   .banner-content {
-    background: -moz-linear-gradient(left, rgba(38, 71, 90, 1) 0%, rgba(38, 71, 90, 1) 1%, rgba(38, 71, 90, 1) 40%, rgba(38, 71, 90, 0) 100%);
+    /* background: -moz-linear-gradient(left, rgba(38, 71, 90, 1) 0%, rgba(38, 71, 90, 1) 1%, rgba(38, 71, 90, 1) 40%, rgba(38, 71, 90, 0) 100%);
     background: -webkit-linear-gradient(left, rgba(38, 71, 90, 1) 0%, rgba(38, 71, 90, 1) 1%, rgba(38, 71, 90, 1) 40%, rgba(38, 71, 90, 0) 100%);
     background: linear-gradient(to right, rgba(38, 71, 90, 1) 0%, rgba(38, 71, 90, 1) 1%, rgba(38, 71, 90, 1) 40%, rgba(38, 71, 90, 0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26475a', endColorstr='#0026475a', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26475a', endColorstr='#0026475a', GradientType=1); */
   }
   .row-metric-circle .metric-circle {
     margin-top: 8rem;

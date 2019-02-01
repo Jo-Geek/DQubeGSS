@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('html').scrollTop(0);
-  //$('.spinner').addClass('activate');
+  $('.spinner').addClass('activate');
 })
 
 var lastScrollTop = 0;
@@ -23,7 +23,7 @@ $(document).on('scrollstop', function (event) {
         // console.log('scroll finished');
         setTimeout(function () {
           scrollInAction = false;
-          $('nav').css('top', '0px');
+          $('nav#secondary_nav').css({ 'top': '0px', 'opacity': '1' });
         }, 100);
 
       });
@@ -44,7 +44,8 @@ $(document).on('scrollstop', function (event) {
         // console.log('scroll finished');
         setTimeout(function () {
           scrollInAction = false;
-          $('nav').css('top', '-60px');
+          $('nav#secondary_nav').css({ 'top': '-60px', 'opacity': '0' });
+
         }, 100);
       });
     }
@@ -58,10 +59,10 @@ $(document).on('scrollstop', function (event) {
 });
 
 window.onload = function () {
-  
+
   setTimeout(function () {
     $('html').scrollTop(0);
-    if ($(window).scrollTop() >= $('main').position().top){
+    if ($(window).scrollTop() >= $('main').position().top) {
       $('nav').css('top', '0px');
 
     }

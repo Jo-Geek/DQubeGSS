@@ -23,7 +23,7 @@
 
 </head>
 
-<body class="_loading">
+<body class="loading">
   <div class="loader">
     <div class="spinner">
       <svg>
@@ -41,16 +41,84 @@
     </div>
   </div>
   <div class="banner">
-    <video autoplay muted loop id="banner_video">
+    <!-- <video autoplay muted loop id="banner_video">
       <source src="assets/video/bannerbg.mp4" type="video/mp4">
-      <!-- <source src="assets/video/bannerbg_tech.webm" type="video/webm"> -->
-    </video>
+      
+    </video> -->
     <div class="banner-content">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none" id="primary_nav">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/image/logo_plain.svg" width="30" height="30" alt="">
+            <span class="navbar-brand-text">
+              DQUBE Global
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+            aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link px-3 px-xxl-4" href="index.html">
+                  <i class="fas fa-home mr-1"></i>
+                  Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 px-xxl-4" href="blog.html">
+                  <i class="fas fa-blog mr-1"></i>
+                  Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link px-3 px-xxl-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-cogs mr-1"></i>
+                  Services
+                </a>
+                <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Web Solutions</a>
+                  <a class="dropdown-item" href="#">Mobile Solutions</a>
+                  <a class="dropdown-item" href="#">Enterprise Solutions</a>
+                  <a class="dropdown-item" href="#">Product Engineering</a>
+                </div>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link px-3 px-xxl-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-building mr-1"></i>
+                  Company
+
+                </a>
+                <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">About us</a>
+                  <a class="dropdown-item" href="#">Birth of DQUBE</a>
+                  <a class="dropdown-item" href="#">Life at DQUBE</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link px-3 px-xxl-4" href="contect.html">
+                  <i class="fas fa-comment-alt mr-1"></i>
+                  Contact</a>
+              </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0 d-none">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
       <!-- <video class="d-none" autoplay muted loop id="banner_video_blur">
         <source src="assets/video/bannerbg.mp4" type="video/mp4">
         <source src="assets/video/bannerbg_tech.webm" type="video/webm">
       </video> -->
-      <div class="container py-4">
+      <!-- <div class="container py-4">
         <img class="mb-5 banner-logo" src="assets/image/logo.jpg" />
 
 
@@ -70,7 +138,7 @@
           <button class="btn btn-danger my-4 shadow d-xxl-none">Drop your requirement</button>
           <button class="btn btn-danger btn-lg my-4 shadow d-none d-xxl-inline-block">Drop your requirement</button>
         </div>
-      </div>
+      </div> -->
     </div>
 
 
@@ -78,13 +146,10 @@
   </div>
 
   <main>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="secondary_nav">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/image/logo_plain.svg" width="30" height="30" alt="">
-          <span class="navbar-brand-text">
-            DQUBE Global
-          </span>
+          <img src="assets/image/logo_plain.svg" alt="DQUBE Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,22 +157,20 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link px-3 px-xxl-4" href="index.html">
-                <i class="fas fa-home mr-1"></i>
-                Home <span class="sr-only">(current)</span></a>
-            </li>
+          <ul class="navbar-nav mr-auto flex-fill justify-content-center">
+
             <li class="nav-item">
               <a class="nav-link px-3 px-xxl-4" href="blog.html">
-                <i class="fas fa-blog mr-1"></i>
-                Blog</a>
+                Blog
+                <i class="fas fa-blog ml-1"></i>
+              </a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link px-3 px-xxl-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-cogs mr-1"></i>
+
                 Services
+                <i class="fas fa-cogs ml-1" style="transform:scaleX(-1)"></i>
               </a>
               <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Web Solutions</a>
@@ -117,6 +180,10 @@
               </div>
             </li>
 
+
+          </ul>
+
+          <ul class="navbar-nav ml-auto flex-fill justify-content-center">
 
             <li class="nav-item dropdown">
               <a class="nav-link px-3 px-xxl-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -147,125 +214,191 @@
       </div>
     </nav>
 
-    <section class="bg-light">
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col-6 col-md-7 align-self-center text-right">
-            <h3 class="mb-4">Mobile App Development</h3>
-            <p>The Mobile app development service provided by Dqube will prove to be very beneficial for your business.
-              Our extensive research and work have made us efficacious in this aspect</p>
-            <button class="btn btn-outline-secondary btn-sm mt-2">Learn more
-              <i class="fas fa-chevron-right ml-2"></i>
-            </button>
-          </div>
-
-          <div class="col-6 col-md-5">
-
-            <img class="img-fluid" src="assets/image/mobileappdevelopement.gif" />
-
-          </div>
-
-
-        </div>
-
-      </div>
-    </section>
-
-
-
     <section class="bg-white">
 
       <div class="container">
 
-
-        <div class="row mb-4">
-          <div class="col-6 col-md-5">
-
-            <img class="img-fluid" src="assets/image/websiteDesign.gif" />
-
-          </div>
-          <div class="col-6 col-md-7 align-self-center">
-            <h3 class="mb-4">Web Designing & Development</h3>
-            <p>We at Dqube, create your own website, not just a website but a user-friendly, responsive website.
-              Our focus is to create and maintain great looking websites which drive great profit for your business</p>
-
-            <button class="btn btn-outline-secondary btn-sm mt-2">Learn more
-              <i class="fas fa-chevron-right ml-2"></i>
-            </button>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-
-    <section class="bg-light">
-
-      <div class="container">
-
-
         <div class="row">
+          <div class="col-6 text-right">
+            <div class="row py-4">
+              <div class="col-8">
+                <h5 class="mb-2">Mobile App Development</h5>
+                <p>The Mobile app development service provided by Dqube will prove to be very beneficial for your
+                  business.
+                  Our extensive research and work have made us efficacious in this aspect</p>
 
-          <div class="col-6 col-md-7 align-self-center text-right">
-            <h3 class="mb-4">Enterprise Application Development</h3>
-            <p>Technology should be available to aid your organization irrespective of its size. At Dqube we believe
-              everyone should be able to reap the benefits of technological advancements. Let an ERP & CRM aid you
-              double
-              growth rate.</p>
-            <button class="btn btn-outline-secondary btn-sm mt-2">Learn more
-              <i class="fas fa-chevron-right ml-2"></i>
-            </button>
+              </div>
+              <div class="col-4">
+                <img class="img-fluid" src="assets/image/mobileappdevelopement.gif">
+              </div>
+
+            </div>
+
           </div>
-          <div class="col-6 col-md-5">
+          <div class="col-6 border-left">
 
-            <img class="img-fluid" src="assets/image/EnterpriseApp.gif" />
+            <div class="row py-4">
+              <div class="col-4">
+                <img class="img-fluid" src="assets/image/websiteDesign.gif">
+              </div>
+              <div class="col-8">
+                <h5 class="mb-2">Web Designing & Development</h5>
+                <p>We at Dqube, create your own website, not just a website but a user-friendly, responsive website.
+                  Our focus is to create and maintain great looking websites which drive great profit for your business</p>
+
+
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+        <div class="row border-top">
+          <div class="col-6 text-right">
+
+            <div class="row py-4">
+              <div class="col-8">
+                <h5 class="mb-2">Enterprise Application Development</h5>
+                <p>Technology should be available to aid your organization irrespective of its size. At Dqube we
+                  believe
+                  everyone should be able to reap the benefits of technological advancements. Let an ERP & CRM aid you
+                  double
+                  growth rate.</p>
+
+              </div>
+              <div class="col-4">
+                <img class="img-fluid" src="assets/image/EnterpriseApp.gif">
+              </div>
+
+            </div>
 
           </div>
+          <div class="col-6 border-left">
+
+            <div class="row py-4">
+              <div class="col-4">
+                <img class="img-fluid" src="assets/image/productDev.gif">
+              </div>
+              <div class="col-8">
+                <h5 class="mb-2">Product Engineering</h5>
+                <p>We help Small & Medium Businesses to turn their ideas into products. We act as their technology
+                  partner end-to-end: from idea validation & design to prototyping to market launch and multiplying up
+                  their revenue.</p>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
         </div>
 
       </div>
-
     </section>
 
-    <section class="bg-white">
+    <section class="bg-light" id="secTetimonials">
+      <div class="container py-4">
+        <h2 class="mt-5 mb-5 text-center text-dark">SERVICES</h2>
 
+        <div class="card-group text-center shadow-lg">
+          <div class="card">
 
-
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-md-5">
-
-            <img class="img-fluid" src="assets/image/productDev.gif" />
-
+            <div class="card-body">
+              <img src="assets/image/icons/hosting.png" class="m-auto" alt="Enhancement Icon" style="width:64px;" />
+              <h5 class="card-title mt-3">Web Hosting</h5>
+              <p class="card-text text-justify">We’re here to help you to choose the right web hosting package for your
+                website
+                based on the requirement and your business needs.</p>
+            </div>
           </div>
-          <div class="col-6 col-md-7 align-self-center text-left">
-            <h3 class="mb-4">Product Engineering</h3>
-            <p>We help Small & Medium Businesses to turn their ideas into products. We act as their technology
-              partner end-to-end: from idea validation & design to prototyping to market launch and multiplying up
-              their revenue.</p>
-            <button class="btn btn-outline-secondary btn-sm mt-2">Learn more
-              <i class="fas fa-chevron-right ml-2"></i>
-            </button>
+          <div class="card">
+
+            <div class="card-body">
+              <img src="assets/image/icons/web_maintenenace.png" class="m-auto" alt="Enhancement Icon" style="width:64px;" />
+
+              <h5 class="card-title mt-3">Website Maintenance</h5>
+              <p class="card-text text-justify">Creating a responsive website is big task and maintaining it properly
+                is a bigger
+                task. We ensure that your website is always active with all updations.</p>
+            </div>
           </div>
+          <div class="card">
 
+            <div class="card-body">
+              <img src="assets/image/icons/enhancement.png" class="m-auto" alt="Enhancement Icon" style="width:64px;" />
 
+              <h5 class="card-title mt-3">Website Enhancement</h5>
+              <p class="card-text text-justify">Designing and developing a website is not a simple task as it involves
+                intensive
+                market research because it’s going to acts as the medium to the customers</p>
+            </div>
+          </div>
+          <div class="card">
 
+            <div class="card-body">
+              <img src="assets/image/icons/seo.png" class="m-auto" alt="Enhancement Icon" style="width:64px;" />
 
+              <h5 class="card-title mt-3">SEO</h5>
+              <p class="card-text text-justify">Dqube is one of the top rated SEO companies in Chennai determined to
+                deliver
+                outstanding ROI within your marketing budget</p>
+            </div>
+          </div>
         </div>
 
+        <div class="row d-none">
+          <div class="col-3">
+            <div class="px-5 text-center">
+              <img class="img-fluid" src="assets/image/icons/hosting.png" style="width:64px;" />
+
+            </div>
+
+            <label>Web Hosting</label>
+            <p>We’re here to help you to choose the right web hosting package for your website based on the requirement
+              and your business needs.</p>
+          </div>
+
+          <div class="col-3">
+            <div class="px-5 text-center">
+              <img class="img-fluid w-75" src="assets/image/icons/hosting.png" />
+
+            </div>
+
+            <label>Web Hosting</label>
+            <p>We’re here to help you to choose the right web hosting package for your website based on the requirement
+              and your business needs.</p>
+          </div>
+
+          <div class="col-3">
+            <div class="px-5 text-center">
+              <img class="img-fluid w-75" src="assets/image/icons/hosting.png" />
+
+            </div>
+
+            <label>Web Hosting</label>
+            <p>We’re here to help you to choose the right web hosting package for your website based on the requirement
+              and your business needs.</p>
+          </div>
+
+          <div class="col-3">
+            <div class="px-5 text-center">
+              <img class="img-fluid w-75" src="assets/image/icons/hosting.png" />
+
+            </div>
+
+            <label>Web Hosting</label>
+            <p>We’re here to help you to choose the right web hosting package for your website based on the requirement
+              and your business needs.</p>
+          </div>
+        </div>
       </div>
-
-
     </section>
-
 
     <section class="bg-dark-transparent">
 
-      <div class="container">
+      <div class="container pb-4">
 
         <div class="row row-eq-height">
 
@@ -273,7 +406,7 @@
           <div class="col-12 col-md-4">
             <h3 class="mt-5 mb-4 text-shadow text-white">FEATURED PRODUCTS</h3>
 
-            <div class="list-group shadow-sm">
+            <div class="list-group shadow-lg">
               <a href="#" class="list-group-item list-group-item-action border-0 bg-light">
                 <div class="d-flex w-100 justify-content-between">
                   <strong class="mb-1">AurumLogs</strong>
@@ -344,6 +477,139 @@
 
     </section>
 
+
+    <section class="bg-light" id="secCustomer">
+      <div class="container pt-3 pb-5">
+        <h2 class="mt-5 mb-5 text-center text-dark">OUR CUSTOMERS</h2>
+        <div class="row mt-3">
+          <div class="col px-5 text-center">
+            <img src="assets/image/customer_logos/amazongroup.png" class="img-fluid w-75" />
+          </div>
+          <div class="col px-5 text-center">
+            <img src="assets/image/customer_logos/nationaltravels.png" class="img-fluid w-75" />
+          </div>
+          <div class="col px-5 text-center">
+            <img src="assets/image/customer_logos/pma.png" class="img-fluid w-75" />
+          </div>
+          <div class="col px-5 text-center">
+            <img src="assets/image/customer_logos/popstreet.PNG" class="img-fluid w-75" />
+          </div>
+          <div class="col px-5 text-center">
+            <img src="assets/image/customer_logos/technospeed.png" class="img-fluid w-75" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white" id="secTetimonials">
+
+      <div class="container py-5">
+        <h2 class="my-0 text-center text-dark">WHAT OUR CUSTOMERS SAY</h2>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active py-5">
+              <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <blockquote>We as a team determined to provide quality web design, creative web development
+                        services
+                        bespoke web applications and strategic digital marketing service.</blockquote>
+                    </div>
+
+                    <div class="card-body">
+                      <div class="row row-eq-height">
+                        <div class="col-2">
+                          <img src="assets/image/faces/olivia.jpg" class="rounded-circle img-fluid" />
+                        </div>
+                        <div class="col-10">
+                          <div><strong>Olivia Dunham</strong></div>
+                          <div class="text-muted"><em>CEO</em>, Dunham Enterprices</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3"></div>
+              </div>
+
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <blockquote>We as a team determined to provide quality web design, creative web development
+                        services
+                        bespoke web applications and strategic digital marketing service.</blockquote>
+                    </div>
+
+                    <div class="card-body">
+                      <div class="row row-eq-height">
+                        <div class="col-2">
+                          <img src="assets/image/faces/walter.jpg" class="rounded-circle img-fluid" />
+                        </div>
+                        <div class="col-10">
+                          <div><strong>Walter Bishop</strong></div>
+                          <div class="text-muted"><em>CEO</em>, Massive Dynamic</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3"></div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
+                      <blockquote>We as a team determined to provide quality web design, creative web development
+                        services
+                        bespoke web applications and strategic digital marketing service.</blockquote>
+                    </div>
+
+                    <div class="card-body">
+                      <div class="row row-eq-height">
+                        <div class="col-2">
+                          <img src="assets/image/faces/oliver.jpg" class="rounded-circle img-fluid" />
+                        </div>
+                        <div class="col-10">
+                          <div><strong>Oliver Queen</strong></div>
+                          <div class="text-muted"><em>CFO</em>, Luther Corp</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3"></div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev justify-content-end" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next justify-content-start" href="#carouselExampleControls" role="button"
+            data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="bg-primary">
+      <div class="container text-center py-5 my-5">
+        <em class="text-white">Footer will come here</em>
+      </div>
+    </section>
 
   </main>
 
