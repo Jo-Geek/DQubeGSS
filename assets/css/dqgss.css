@@ -319,10 +319,11 @@ a.banner-footer-goto:hover {
   clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);
 }
 
-.services-button .text {
-  /* display: block; */
-  /* margin-left:.5rem; */
+/*.services-button .text {
+   display: block; 
+ margin-left:.5rem; 
 }
+*/
 
 nav#secondary_nav.fixed-top {
   top: -60px;
